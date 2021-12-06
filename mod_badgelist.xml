@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" version="3.2.0" method="upgrade">
+
+    <name>MOD_BADGELIST</name>
+    <author>Andy Kirk</author>
+    <authorEmail>andy.kirk@npeu.ox.ac.uk</authorEmail>
+    <authorUrl>https://www.npeu.ox.ac.uk</authorUrl>
+    <creationDate>December 2021</creationDate>
+    <copyright>(C) NPEU 2021</copyright>
+    <license>MIT License; see LICENSE.md</license>
+
+    <!--  The version string is recorded in the components table -->
+    <version>1.0.0</version>
+    <!-- The description is optional and defaults to the name -->
+    <description>MOD_BADGELIST_XML_DESCRIPTION</description>
+
+    <updateservers>
+        <!-- Note: No spaces or linebreaks allowed between the server tags -->
+        <server type="extension" name="NPEU: mod_badgelist Update Site">https://raw.githubusercontent.com/NPEU/mod_badgelist/main/update-manifest.xml</server>
+    </updateservers>
+
+    <files>
+        <filename module="mod_badgelist">mod_badgelist.php</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>language</folder>
+        <folder>tmpl</folder>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="badges"
+                    type="subform"
+                    label="MOD_BADGELIST_BADGES_LABEL"
+                    description="MOD_BADGELIST_BADGES_DESC"
+                    multiple="true"
+                    min="1"
+                >
+                    <form>
+                        <field
+                            name="brand_id"
+                            type="sql"
+                            default=""
+                            label="MOD_BADGELIST_BADGE_LABEL"
+                            description="MOD_BADGELIST_BADGE_DESC"
+                            query="SELECT id AS value, name AS text FROM #__brands b ORDER BY text;"
+                            key_field="value"
+                            value_field="text"
+                        >
+                            <option value="">MOD_BADGELIST_BADGE_DEFAULT</option>
+                        </field>
+                        <field
+                            name="override_url"
+                            type="text"
+                            label="MOD_BADGELIST_OVERRIDE_URL_LABEL"
+                            description="MOD_BADGELIST_OVERRIDE_URL_DESC"
+                        />
+                    </form>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+
+			</fieldset>
+        </fields>
+    </config>
+
+</extension>
