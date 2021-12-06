@@ -54,10 +54,69 @@
                         <field
                             name="override_url"
                             type="text"
-                            label="MOD_BADGELIST_OVERRIDE_URL_LABEL"
-                            description="MOD_BADGELIST_OVERRIDE_URL_DESC"
+                            label="MOD_BADGELIST_BADGE_OVERRIDE_URL_LABEL"
+                            description="MOD_BADGELIST_BADGE_OVERRIDE_URL_DESC"
                         />
+                        <field
+                            name="limit_height"
+                            type="list"
+                            default="8"
+                            label="MOD_BADGELIST_BADGE_HEIGHT_LABEL"
+                            description="MOD_BADGELIST_BADGE_HEIGHT_DESC"
+                        >
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                            <option value="12">12</option>
+                            <option value="m">MOD_BADGELIST_BADGE_HEIGHT_OPTION_M</option>
+                            <option value="m">MOD_BADGELIST_BADGE_HEIGHT_OPTION_M</option>
+                            <option value="l">MOD_BADGELIST_BADGE_HEIGHT_OPTION_L</option>
+                            <option value="xl">MOD_BADGELIST_BADGE_HEIGHT_OPTION_XL</option>
+                            <option value="xxl">MOD_BADGELIST_BADGE_HEIGHT_OPTION_XXL</option>
+                        </field>
                     </form>
+                </field>
+                <field
+                    name="list_layout"
+                    type="list"
+                    default=""
+                    label="MOD_BADGELIST_LAYOUT_LABEL"
+                    description="MOD_BADGELIST_LAYOUT_DESC"
+                >
+                    <option value="">MOD_BADGELIST_LAYOUT_OPTION_DEFAULT</option>
+                    <option value="row--start">MOD_BADGELIST_LAYOUT_OPTION_LEFT</option>
+                    <option value="row--centre">MOD_BADGELIST_LAYOUT_OPTION_CENTER</option>
+                    <option value="row--end">MOD_BADGELIST_LAYOUT_OPTION_RIGHT</option>
+                    <option value="distribute">MOD_BADGELIST_LAYOUT_OPTION_DISTRIBUTE</option>
+                    <option value="distribute--balance-bottom">MOD_BADGELIST_LAYOUT_OPTION_DISTRIBUTE_BOTTOM</option>
+                    <option value="distribute--balance-top">MOD_BADGELIST_LAYOUT_OPTION_DISTRIBUTE_TOP</option>
+                </field>
+                <field
+                    name="list_gutter"
+                    type="list"
+                    default=""
+                    label="MOD_BADGELIST_GUTTER_LABEL"
+                    description="MOD_BADGELIST_GUTTER_DESC"
+                >
+                    <option value="">MOD_BADGELIST_GUTTER_OPTION_NONE</option>
+                    <option value="s">MOD_BADGELIST_GUTTER_OPTION_S</option>
+                    <option value="m">MOD_BADGELIST_GUTTER_OPTION_M</option>
+                    <option value="l">MOD_BADGELIST_GUTTER_OPTION_L</option>
+                </field>
+                <field
+                    name="list_basis"
+                    type="list"
+                    default=""
+                    label="MOD_BADGELIST_BASIS_LABEL"
+                    description="MOD_BADGELIST_BASIS_DESC"
+                >
+                    <option value="">MOD_BADGELIST_BASIS_OPTION_NONE</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="35">35</option>
                 </field>
             </fieldset>
             <fieldset name="advanced">

@@ -55,6 +55,10 @@ class ModBadgelistHelper
             $brand->params->logo_url = $data->override_url;
         }
         
+        if (!empty($data->limit_height)) {
+            $brand->params->limit_height = $data->limit_height;
+        }
+        
         return $brand;
     }
 }
