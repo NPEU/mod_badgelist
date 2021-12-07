@@ -105,6 +105,17 @@
                     <option value="l">MOD_BADGELIST_GUTTER_OPTION_L</option>
                 </field>
                 <field
+                    name="flush_gutter"
+                    type="radio"
+                    label="MOD_BADGELIST_FLUSH_GUTTER_LABEL"
+                    description="MOD_BADGELIST_FLUSH_GUTTER_DESC"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field
                     name="list_basis"
                     type="list"
                     default=""
