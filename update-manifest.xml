@@ -5,11 +5,11 @@
         <description>Joomla! mod_badgelist module</description>
         <element>mod_badgelist</element>
         <type>module</type>
-        <version>1.1.0</version>
+        <version>1.2.0</version>
         <client>site</client>
-        <infourl title="NPEU: mod_badgelist">https://github.com/NPEU/mod_badgelist/releases/tag/v1.1.0</infourl>
+        <infourl title="NPEU: mod_badgelist">https://github.com/NPEU/mod_badgelist/releases/tag/v1.2.0</infourl>
         <downloads>
-            <downloadurl type="full" format="zip">https://github.com/NPEU/mod_badgelist/archive/v1.1.0.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://github.com/NPEU/mod_badgelist/archive/v1.2.0.zip</downloadurl>
         </downloads>
         <targetplatform name="joomla" />
         <tags>
