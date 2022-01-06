@@ -35,6 +35,10 @@ class ModBadgelistHelper
         $db->setQuery($query);
         $brand = $db->loadObject();
         
+        if (empty($brand->params)) {
+            $brand->params = '{}';
+        }
+        
         // Process params:
         $brand->params = json_decode($brand->params);
         // Where $params is a JSON string. Can use loadObject(), loadArray().
