@@ -10,7 +10,7 @@
     <license>MIT License; see LICENSE.md</license>
 
     <!--  The version string is recorded in the components table -->
-    <version>1.1.0</version>
+    <version>1.0.0</version>
     <!-- The description is optional and defaults to the name -->
     <description>MOD_BADGELIST_XML_DESCRIPTION</description>
 
@@ -76,6 +76,17 @@
                             <option value="xxl">MOD_BADGELIST_BADGE_HEIGHT_OPTION_XXL</option>
                         </field>
                     </form>
+                </field>
+                <field
+                    name="badge_align"
+                    type="list"
+                    default="start"
+                    label="MOD_BADGELIST_BADGE_ALIGN_LABEL"
+                    description="MOD_BADGELIST_BADGE_ALIGN_DESC"
+                >
+                    <option value="start">MOD_BADGELIST_BADGE_ALIGN_OPTION_LEFT</option>
+                    <option value="center">MOD_BADGELIST_BADGE_ALIGN_OPTION_CENTER</option>
+                    <option value="end">MOD_BADGELIST_BADGE_ALIGN_OPTION_RIGHT</option>
                 </field>
                 <field
                     name="list_layout"
