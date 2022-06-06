@@ -15,8 +15,11 @@ JLoader::register('ModBadgelistHelper', __DIR__ . '/helper.php');
 $badges_data = $params->get('badges');
 
 $badges = [];
-foreach ($badges_data as $badges_datum) {
-    $badges[] = ModBadgelistHelper::getBrand($badges_datum);
+foreach ($badges_data as $badge_data) {
+    if (empty($badge_data->brand_id)) {
+        continue;
+    }
+    $badges[] = ModBadgelistHelper::getBrand($badge_data);
 }
 
 #$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'), ENT_COMPAT, 'UTF-8');
