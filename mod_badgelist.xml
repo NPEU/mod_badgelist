@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" client="site" version="3.2.0" method="upgrade">
+<extension type="module" client="site" method="upgrade">
 
     <name>MOD_BADGELIST</name>
     <author>Andy Kirk</author>
     <authorEmail>andy.kirk@npeu.ox.ac.uk</authorEmail>
     <authorUrl>https://www.npeu.ox.ac.uk</authorUrl>
-    <creationDate>December 2021</creationDate>
-    <copyright>(C) NPEU 2021</copyright>
+    <creationDate>April 2024</creationDate>
+    <copyright>(C) NPEU 2024</copyright>
     <license>MIT License; see LICENSE.md</license>
 
     <!--  The version string is recorded in the components table -->
-    <version>1.2.2</version>
+    <version>2.0.0</version>
     <!-- The description is optional and defaults to the name -->
     <description>MOD_BADGELIST_XML_DESCRIPTION</description>
 
@@ -19,11 +19,12 @@
         <server type="extension" name="NPEU: mod_badgelist Update Site">https://raw.githubusercontent.com/NPEU/mod_badgelist/main/update-manifest.xml</server>
     </updateservers>
 
+    <namespace path="src">NPEU\Module\Badgelist</namespace>
+
     <files>
-        <filename module="mod_badgelist">mod_badgelist.php</filename>
-        <filename>helper.php</filename>
-        <filename>index.html</filename>
+        <filename module="mod_badgelist">services</filename>
         <folder>language</folder>
+        <folder>src</folder>
         <folder>tmpl</folder>
     </files>
 

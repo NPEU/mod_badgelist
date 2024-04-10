@@ -3,16 +3,15 @@
  * @package     Joomla.Site
  * @subpackage  mod_badgelist
  *
- * @copyright   Copyright (C) NPEU 2021.
+ * @copyright   Copyright (C) NPEU 2024.
  * @license     MIT License; see LICENSE.md
  */
 
 defined('_JEXEC') or die;
 
 
-$doc = JFactory::getDocument();
-
 ?>
+<pre><?php var_dump($badges); exit; ?></pre>
 <div>
     <?php foreach ($badges as $badge) : ?>
     <p>
