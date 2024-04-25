@@ -26,11 +26,11 @@ class Dispatcher extends AbstractModuleDispatcher implements HelperFactoryAwareI
     protected function getLayoutData(): array
     {
         $data   = parent::getLayoutData();
-        $params = $data['params'];
 
+        $params = $data['params'];
         $data['badges'] = $this->getHelperFactory()
             ->getHelper('BadgelistHelper')
-            ->getBadges($data['params'], $this->getApplication());
+            ->getBadges($params, $this->getApplication());
 
         return $data;
     }
