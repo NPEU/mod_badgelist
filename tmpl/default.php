@@ -11,7 +11,6 @@ defined('_JEXEC') or die;
 
 
 ?>
-<pre><?php var_dump($badges); exit; ?></pre>
 <div>
     <?php foreach ($badges as $badge) : ?>
     <p>
