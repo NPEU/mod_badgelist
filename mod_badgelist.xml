@@ -22,7 +22,7 @@
     <namespace path="src">NPEU\Module\Badgelist</namespace>
 
     <files>
-        <filename module="mod_badgelist">services</filename>
+        <folder module="mod_badgelist">services</folder>
         <folder>language</folder>
         <folder>src</folder>
         <folder>tmpl</folder>
